@@ -7,7 +7,7 @@ require('dotenv').config();
 
 var isDevelopment = process.env.NODE_ENV === 'development' || process.env.NODE_ENV === undefined;
 
-const port = 8080;
+const port = 8081;
 const app = express();
 app.use(bodyParser.json());
 const about = {
@@ -33,8 +33,9 @@ const locations2 = require('./data/ballotreturn/GA/mocklocations');
 
 const mock_twitter = require('./data/mock/mock_twitter');
 
-const earlyVotingGa = require('./routes/earlyvoting/ga');
-const civic = require('./routes/civic');
+const earlyVotingGa = require("./routes/earlyvoting/ga");
+const earlyVotingCa = require("./routes/earlyvoting/ca");
+const civic = require("./routes/civic");
 
 app.use((req, res, next) => {
   res.append('Access-Control-Allow-Origin', ['*']);
@@ -57,9 +58,10 @@ app.get('/earlyvoting/states/', (req, res) => {
 app.get('/earlyvoting/regions/', (req, res) => {
   // console.log('Returning regions', req.query);
   let stateid = req.query.stateid;
-  const foundRegions = stateid === 'GA';
+  const foundRegions = stateid === "GA" || "CA";
   if (foundRegions) {
-    return earlyVotingGa.regions(req, res);
+    if (stateid === "GA")return earlyVotingGa.regions(req, res);
+    else return earlyVotingCa.regions(req, res);
   } else {
     console.log(`State not found.`);
     res.status(404).send();
@@ -70,7 +72,8 @@ app.get('/earlyvoting/locations/', (req, res) => {
   // console.log('Returning locations', req.query);
   let stateid = req.query.stateid;
   let locid = req.query.locid.toUpperCase();
-  if (stateid == 'GA') return earlyVotingGa.locations(req, res);
+  if (stateid === "GA") return earlyVotingGa.locations(req, res);
+  else if (stateid === "CA") return earlyVotingCa.locations(req, res);
   else return res.status(404).send();
 });
 
