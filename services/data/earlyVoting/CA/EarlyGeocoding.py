@@ -16,6 +16,7 @@ from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import Select
 from selenium.webdriver.support.ui import WebDriverWait
+from selenium.webdriver.support import expected_conditions as EC
 from webdriver_manager.chrome import ChromeDriverManager
 from bs4 import BeautifulSoup
 from argparse import ArgumentParser
@@ -91,7 +92,8 @@ def scrape(county, skip_existing, apikey):
     isEarlyVoting.click()
     searchButton = driver.find_element(By.ID, "search")
     searchButton.click()
-    
+    WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.ID, 'VoteCenterTable')))
+
     soup = BeautifulSoup(driver.page_source, 'html.parser')
     table = soup.select('#VoteCenterTable > tbody')
     addresses = []
@@ -110,7 +112,7 @@ def scrape(county, skip_existing, apikey):
                 addressCells = cells[1].find_all('div')
                 address = addressCells[0].get_text().strip() + "," + addressCells[2].get_text().strip()
             else:
-                continue
+                return len(addresses)
             
         # clean up addresses
         cleanAddress = re.sub(r"[,.]+", ' ', address)
@@ -216,6 +218,7 @@ USAGE
         i = 0
         for county in counties:            
             found = scrape(county.upper(), skip_existing, apikey)
+            print(found)
             if found > 0 and i < (num_counties - 1):
                 pause = randint(30,45)
                 print("sleeping %d ... " % pause)
