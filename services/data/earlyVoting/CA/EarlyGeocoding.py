@@ -4,7 +4,7 @@
 EarlyGeocoding -- Web Scrape California SOS site to find all current early voting sites and generate a data file that Five Fifths Voter can use for mapping.
 
 
-@deffield updated: 2021-02-18
+@deffield updated: 2021-02-22
 '''
 
 import sys
@@ -26,8 +26,8 @@ from time import sleep
 
 __all__ = []
 __version__ = 0.1
-__date__ = '2021-02-18'
-__updated__ = '2021-02-18'
+__date__ = '2021-02-22'
+__updated__ = '2021-02-22'
 
 DEBUG = 0
 TESTRUN = 1
@@ -71,10 +71,8 @@ def scrape(county, skip_existing, apikey):
             print ("Skipping %s County because data already exists" % county)
             return 0
         with open(output_json) as f:
-            print("json load")
             geodata = json.load(f)
     else:
-        print("empty geodata")
         geodata = {}         
 
     payload = getScrapeParams(county.upper())
@@ -92,7 +90,7 @@ def scrape(county, skip_existing, apikey):
     isEarlyVoting.click()
     searchButton = driver.find_element(By.ID, "search")
     searchButton.click()
-    WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.ID, 'VoteCenterTable')))
+    WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.XPATH, "//*[@id='VoteCenterTable']/tbody")))
 
     soup = BeautifulSoup(driver.page_source, 'html.parser')
     table = soup.select('#VoteCenterTable > tbody')
@@ -112,7 +110,11 @@ def scrape(county, skip_existing, apikey):
                 addressCells = cells[1].find_all('div')
                 address = addressCells[0].get_text().strip() + "," + addressCells[2].get_text().strip()
             else:
-                return len(addresses)
+                #Skip county if no adresses are available
+                # return len(addresses)
+
+                #Create empty json file for county
+                continue
             
         # clean up addresses
         cleanAddress = re.sub(r"[,.]+", ' ', address)
@@ -218,7 +220,6 @@ USAGE
         i = 0
         for county in counties:            
             found = scrape(county.upper(), skip_existing, apikey)
-            print(found)
             if found > 0 and i < (num_counties - 1):
                 pause = randint(30,45)
                 print("sleeping %d ... " % pause)

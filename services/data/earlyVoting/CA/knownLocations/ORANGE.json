@@ -1,0 +1,62 @@
+{
+    "1975 BALEARIC DR COSTA MESA CA 92626": {
+        "location_name": "Balearic Community Center",
+        "original_address": "1975 Balearic Dr, Costa Mesa, CA 92626",
+        "status": "REQUEST_DENIED",
+        "location_type": "REQUEST_DENIED"
+    },
+    "77 FAIR DR COSTA MESA CA 92626": {
+        "location_name": "Costa Mesa City Hall",
+        "original_address": "77 Fair Dr, Costa Mesa, CA 92626",
+        "status": "REQUEST_DENIED",
+        "location_type": "REQUEST_DENIED"
+    },
+    "5700 ORANGE AVE CYPRESS CA 90630": {
+        "location_name": "Cypress Community Center",
+        "original_address": "5700 Orange Ave, Cypress, CA 90630",
+        "status": "REQUEST_DENIED",
+        "location_type": "REQUEST_DENIED"
+    },
+    "18700 WARD ST FOUNTAIN VALLEY CA 92708": {
+        "location_name": "Orange County Water District",
+        "original_address": "18700 Ward St, Fountain Valley, CA 92708",
+        "status": "REQUEST_DENIED",
+        "location_type": "REQUEST_DENIED"
+    },
+    "7111 TALBERT AVE HUNTINGTON BEACH CA 92648": {
+        "location_name": "Huntington Beach Central Library",
+        "original_address": "7111 Talbert Ave, Huntington Beach, CA 92648",
+        "status": "REQUEST_DENIED",
+        "location_type": "REQUEST_DENIED"
+    },
+    "2000 MAIN ST HUNTINGTON BEACH CA 92648": {
+        "location_name": "Huntington Beach Civic Center",
+        "original_address": "2000 Main St, Huntington Beach, CA 92648",
+        "status": "REQUEST_DENIED",
+        "location_type": "REQUEST_DENIED"
+    },
+    "7000 NORMA DR HUNTINGTON BEACH CA 92647": {
+        "location_name": "Murdy Community Center",
+        "original_address": "7000 Norma Dr, Huntington Beach, CA 92647",
+        "status": "REQUEST_DENIED",
+        "location_type": "REQUEST_DENIED"
+    },
+    "3 CENTERPOINTE DR LA PALMA CA 90623": {
+        "location_name": "La Quinta Inn & Suites Buena Park",
+        "original_address": "3 Centerpointe Dr, La Palma, CA 90623",
+        "status": "REQUEST_DENIED",
+        "location_type": "REQUEST_DENIED"
+    },
+    "3021 BLUME DR LOS ALAMITOS CA 90720": {
+        "location_name": "Rush Park",
+        "original_address": "3021 Blume Dr, Los Alamitos, CA 90720",
+        "status": "REQUEST_DENIED",
+        "location_type": "REQUEST_DENIED"
+    },
+    "100 CIVIC CENTER DR NEWPORT BEACH CA 92660": {
+        "location_name": "Newport Beach Civic Center",
+        "original_address": "100 Civic Center Dr, Newport Beach, CA 92660",
+        "status": "REQUEST_DENIED",
+        "location_type": "REQUEST_DENIED"
+    }
+}

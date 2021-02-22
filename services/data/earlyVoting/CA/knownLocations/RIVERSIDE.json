@@ -1,0 +1,14 @@
+{
+    "12363 LIMONITE AVE SUITE 910 EASTVALE CA 91752": {
+        "location_name": "Eastvale City Clerk's Office",
+        "original_address": "12363 Limonite Ave,  Suite 910, Eastvale, CA 91752",
+        "status": "REQUEST_DENIED",
+        "location_type": "REQUEST_DENIED"
+    },
+    "2720 GATEWAY DRIVE RIVERSIDE CA 92507": {
+        "location_name": "Registrar of Voters Office",
+        "original_address": "2720 Gateway Drive, Riverside, CA 92507",
+        "status": "REQUEST_DENIED",
+        "location_type": "REQUEST_DENIED"
+    }
+}

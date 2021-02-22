@@ -1,0 +1,62 @@
+{
+    "1560 N MINNEWAWA AVE CLOVIS CA 93619": {
+        "location_name": "BUCHANAN HIGH SCHOOL",
+        "original_address": "1560 N Minnewawa Ave, Clovis, CA 93619",
+        "status": "REQUEST_DENIED",
+        "location_type": "REQUEST_DENIED"
+    },
+    "1033 5TH ST CLOVIS CA 93612": {
+        "location_name": "CLOVIS CITY UTILITY BUILDING",
+        "original_address": "1033 5th St, Clovis, CA 93612",
+        "status": "REQUEST_DENIED",
+        "location_type": "REQUEST_DENIED"
+    },
+    "390 W FIR AVE CLOVIS CA 93611": {
+        "location_name": "CLOVIS COMMUNITY COLLEGE - HERNDON",
+        "original_address": "390 W Fir Ave, Clovis, CA 93611",
+        "status": "REQUEST_DENIED",
+        "location_type": "REQUEST_DENIED"
+    },
+    "2940 LEONARD AVE CLOVIS CA 93619": {
+        "location_name": "CLOVIS EAST HIGH SCHOOL",
+        "original_address": "2940 Leonard Ave, Clovis, CA 93619",
+        "status": "REQUEST_DENIED",
+        "location_type": "REQUEST_DENIED"
+    },
+    "2823 HELM AVE CLOVIS CA 93612": {
+        "location_name": "INDEPENDENT ORDER OF ODD FELLOWS",
+        "original_address": "2823 Helm Ave, Clovis, CA 93612",
+        "status": "REQUEST_DENIED",
+        "location_type": "REQUEST_DENIED"
+    },
+    "85 N TEMPERANCE AVE CLOVIS CA 93611": {
+        "location_name": "MISS WINKLES PET ADOPTION CENTER",
+        "original_address": "85 N Temperance Ave, Clovis, CA 93611",
+        "status": "REQUEST_DENIED",
+        "location_type": "REQUEST_DENIED"
+    },
+    "998 TEMPERANCE AVE CLOVIS CA 93611": {
+        "location_name": "PRECISION PLASTICS",
+        "original_address": "998 Temperance Ave, Clovis, CA 93611",
+        "status": "REQUEST_DENIED",
+        "location_type": "REQUEST_DENIED"
+    },
+    "1050 SHAW AVE CLOVIS CA 93612": {
+        "location_name": "SIERRA VISTA MALL",
+        "original_address": "1050 Shaw Ave, Clovis, CA 93612",
+        "status": "REQUEST_DENIED",
+        "location_type": "REQUEST_DENIED"
+    },
+    "2221 KERN ST FRESNO CA 93721": {
+        "location_name": "Fresno County Elections",
+        "original_address": "2221 Kern St, Fresno, CA 93721",
+        "status": "REQUEST_DENIED",
+        "location_type": "REQUEST_DENIED"
+    },
+    "815 PARK BLVD ORANGE COVE CA 93646": {
+        "location_name": "Orange Cove Branch Library",
+        "original_address": "815 Park Blvd, Orange Cove, CA 93646",
+        "status": "REQUEST_DENIED",
+        "location_type": "REQUEST_DENIED"
+    }
+}

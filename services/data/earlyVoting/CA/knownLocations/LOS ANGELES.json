@@ -1,0 +1,62 @@
+{
+    "4464 SEPULVEDA BLVD CULVER CIY CA 90230": {
+        "location_name": "Culver Palms United Methodist Church",
+        "original_address": "4464 Sepulveda Blvd, Culver Ciy, CA 90230",
+        "status": "REQUEST_DENIED",
+        "location_type": "REQUEST_DENIED"
+    },
+    "3501 SANTA ANITA AVE EL MONTE CA 91731": {
+        "location_name": "El Monte Station (LA Metro)",
+        "original_address": "3501 Santa Anita Ave, El Monte, CA 91731",
+        "status": "REQUEST_DENIED",
+        "location_type": "REQUEST_DENIED"
+    },
+    "5504 W 135TH ST HAWTHORNE CA 90250": {
+        "location_name": "Dana Middle School",
+        "original_address": "5504 W 135th St, Hawthorne, CA 90250",
+        "status": "REQUEST_DENIED",
+        "location_type": "REQUEST_DENIED"
+    },
+    "1123 N MARLBOROUGH AVE INGLEWOOD CA 90302": {
+        "location_name": "Centinela Elementary School",
+        "original_address": "1123 N Marlborough Ave, Inglewood, CA 90302",
+        "status": "REQUEST_DENIED",
+        "location_type": "REQUEST_DENIED"
+    },
+    "5354 W 64TH ST INGLEWOOD CA 90302": {
+        "location_name": "Frank D Parent Elementary School",
+        "original_address": "5354 W 64th St, Inglewood, CA 90302",
+        "status": "REQUEST_DENIED",
+        "location_type": "REQUEST_DENIED"
+    },
+    "7900 S WESTERN AVE LOS ANGELES CA 90047": {
+        "location_name": "Bethel AME Church LA",
+        "original_address": "7900 S Western Ave, Los Angeles, CA 90047",
+        "status": "REQUEST_DENIED",
+        "location_type": "REQUEST_DENIED"
+    },
+    "3570 S DENKER AVE LOS ANGELES CA 90018": {
+        "location_name": "Betty Hill Senior Citizen Center",
+        "original_address": "3570 S Denker Ave, Los Angeles, CA 90018",
+        "status": "REQUEST_DENIED",
+        "location_type": "REQUEST_DENIED"
+    },
+    "8906 W PICO BLVD LOS ANGELES CA 90035": {
+        "location_name": "B'nai David Judea",
+        "original_address": "8906 W Pico Blvd, Los Angeles, CA 90035",
+        "status": "REQUEST_DENIED",
+        "location_type": "REQUEST_DENIED"
+    },
+    "9301 S HOOVER ST LOS ANGELES CA 90044": {
+        "location_name": "Bret Harte Middle School",
+        "original_address": "9301 S Hoover St, Los Angeles, CA 90044",
+        "status": "REQUEST_DENIED",
+        "location_type": "REQUEST_DENIED"
+    },
+    "7600 S AVALON BLVD LOS ANGELES CA 90001": {
+        "location_name": "Estelle Van Meter Multi-Purpose Center",
+        "original_address": "7600 S Avalon Blvd, Los Angeles, CA 90001",
+        "status": "REQUEST_DENIED",
+        "location_type": "REQUEST_DENIED"
+    }
+}

@@ -1,0 +1,62 @@
+{
+    "510 HWY 1 BODEGA BAY CA 94923": {
+        "location_name": "Bodega Bay Fire Station",
+        "original_address": "510 Hwy 1, Bodega Bay, CA 94923",
+        "status": "REQUEST_DENIED",
+        "location_type": "REQUEST_DENIED"
+    },
+    "205 W 1ST ST CLOVERDALE CA 95425": {
+        "location_name": "Cloverdale Veterans Memorial Bldg",
+        "original_address": "205 W 1st St, Cloverdale, CA 95425",
+        "status": "REQUEST_DENIED",
+        "location_type": "REQUEST_DENIED"
+    },
+    "8505 PARK AVE COTATI CA 94931": {
+        "location_name": "Cotati Veterans Memorial Bldg",
+        "original_address": "8505 Park Ave, Cotati, CA 94931",
+        "status": "REQUEST_DENIED",
+        "location_type": "REQUEST_DENIED"
+    },
+    "24900 HWY 116 DUNCANS MILLS CA 95462": {
+        "location_name": "Duncans Mills Fire Station",
+        "original_address": "24900 Hwy 116, Duncans Mills, CA 95462",
+        "status": "REQUEST_DENIED",
+        "location_type": "REQUEST_DENIED"
+    },
+    "20975 GEYSERVILLE AVE GEYSERVILLE CA 95441": {
+        "location_name": "Geyserville Fire Station",
+        "original_address": "20975 Geyserville Ave, Geyserville, CA 95441",
+        "status": "REQUEST_DENIED",
+        "location_type": "REQUEST_DENIED"
+    },
+    "13445 ARNOLD DR GLEN ELLEN CA 95442": {
+        "location_name": "Glen Ellen Fire Station",
+        "original_address": "13445 Arnold Dr, Glen Ellen, CA 95442",
+        "status": "REQUEST_DENIED",
+        "location_type": "REQUEST_DENIED"
+    },
+    "14107 ARMSTRONG WOODS RD GUERNEVILLE CA 95446": {
+        "location_name": "Guerneville Regional Library",
+        "original_address": "14107 Armstrong Woods Rd, Guerneville, CA 95446",
+        "status": "REQUEST_DENIED",
+        "location_type": "REQUEST_DENIED"
+    },
+    "401 GROVE ST HEALDSBURG CA 95448": {
+        "location_name": "Healdsburg City Hall",
+        "original_address": "401 Grove St, Healdsburg, CA 95448",
+        "status": "REQUEST_DENIED",
+        "location_type": "REQUEST_DENIED"
+    },
+    "9045 SONOMA HWY KENWOOD CA 95452": {
+        "location_name": "Kenwood Fire Station",
+        "original_address": "9045 Sonoma Hwy, Kenwood, CA 95452",
+        "status": "REQUEST_DENIED",
+        "location_type": "REQUEST_DENIED"
+    },
+    "320 N MCDOWELL BLVD PETALUMA CA 94954": {
+        "location_name": "Petaluma Community Center",
+        "original_address": "320 N McDowell Blvd, Petaluma, CA 94954",
+        "status": "REQUEST_DENIED",
+        "location_type": "REQUEST_DENIED"
+    }
+}
