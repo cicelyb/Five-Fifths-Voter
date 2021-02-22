@@ -14,8 +14,7 @@ else {
 //const currentElectionId = 2000; // VIP Test Election
 //const currentElectionId = 5029; // Louisiana General Congressional Election
 const currentElectionId = process.env.NODE_CIVIC_ELECTION_ID || 2000;
-const earlyVotingGa = require("./earlyvoting/ga");
-const earlyVotingCa = require("./earlyvoting/ca");
+const earlyVotingGa = require('./earlyvoting/ga');
 
 exports.pollingPlace = function (req, res) {
   try {
@@ -67,43 +66,6 @@ exports.pollingPlace = function (req, res) {
               console.log("no early voting data from google");
               var more = earlyVotingGa.locationData(
                 "GA",
-                county,
-                response.data
-              );
-              return more;
-            }
-          } else if (response.data.normalizedInput.state === "CA") {
-            console.log("California data");
-            if (!response.data.state) {
-              console.log("no state", response.data);
-              return response.data;
-            }
-            if (!response.data.state[0]) {
-              console.log("no state[0]", response.data.state);
-              return response.data;
-            }
-            if (!response.data.state[0].local_jurisdiction) {
-              console.log(
-                "no state[0].local_jurisdiction",
-                response.data.state[0]
-              );
-              return response.data;
-            }
-            if (!response.data.state[0].local_jurisdiction.name) {
-              console.log(
-                "no state[0].local_jurisdiction.name",
-                response.data.state[0].local_jurisdiction
-              );
-              return response.data;
-            }
-
-            var county = response.data.state[0].local_jurisdiction.name;
-            county = county.toUpperCase().replace("COUNTY", "").trim();
-            console.log(county);
-            if (!response.data.earlyVoteSites) {
-              console.log("no early voting data from google");
-              var more = earlyVotingCa.locationData(
-                "CA",
                 county,
                 response.data
               );
